@@ -353,7 +353,7 @@ It is evident that this binary is encrypting the first argument with a key, and 
 ret = memcmp(output_buf,&local_af8,(long)ret);
 ```
 
-All we need to do is extract the RSA keypair (BYTE_ARRAY_301fa9ba100) and use the RSA_private_decrypt() to decrypt the encrypted buffer on &local_af8.
+All we need to do is extract the RSA keypair (BYTE_ARRAY_301fa9ba100) and use the RSA_public_decrypt() to decrypt the encrypted buffer on &local_af8.
 
 ```C
 #include <stdio.h>
