@@ -449,8 +449,8 @@ int main()
 ```
 
 ```
-$ gcc -o ./decoder ./decoder.c -lcrypto
-$ ./decoder
+$ gcc -o ./decryptor ./decryptor.c -lcrypto
+$ ./decryptor
 [+] Decrypting data...
 [FLAG IS] TWCTF{Rivest_Shamir_Adleman}
 ```

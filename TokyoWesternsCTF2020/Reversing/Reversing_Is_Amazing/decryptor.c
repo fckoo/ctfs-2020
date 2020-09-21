@@ -67,8 +67,7 @@ int main()
 {
 	char decrypted[4096] = {};
 	BIO *bio_struct = BIO_new_mem_buf(__private_key_raw, __private_key_raw_len);
-	BIO *pub_key = BIO_new(BIO_s_mem());
-	if (bio_struct == NULL && pub_key == NULL)
+	if (bio_struct == NULL)
 		return -1;
 
 	EVP_PKEY *evp_struct = NULL;
