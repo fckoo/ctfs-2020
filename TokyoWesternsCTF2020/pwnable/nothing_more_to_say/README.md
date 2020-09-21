@@ -37,7 +37,7 @@ int main(void) {
 }
 ```
 
-In our case, we opt for overwriting main()'s return value to point to our shellcode buffer.  We do this in two stages..
+In our case, we opt to overwrite the saved return address on main()'s stack to point to our shellcode buffer.  We do this in two stages..
 
 After that, we upload the final stage shellcode and quit the program to obtain execution..
 
